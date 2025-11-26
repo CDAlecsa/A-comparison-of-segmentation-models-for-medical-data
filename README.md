@@ -91,7 +91,7 @@ This repository is intended for **academic and research purposes**.
   - `pipeline_validation` – scripts for code validation
   - `utils` – utility scripts & helper functions
 
-- The `models` folder contains the (original or slightly modified)  codes corresponding to the architectures belonging to the following repositories, integrated directly for **pipeline consistency and academic comparisons**:
+- *The* `models` *folder contains the (original or slightly modified)  codes corresponding to the architectures belonging to the following repositories, integrated directly for* **pipeline consistency and academic comparisons**:
   - MT-UNet
   - Swin-Unet
   - TransUNet
@@ -125,3 +125,4 @@ The following *GitHub repositories* correspond to the model implementations & pr
 - [Segmentation Models Pytorch](https://github.com/qubvel-org/segmentation_models.pytorch)
 - [CBIM - Medical Image Segmentation](https://github.com/yhygao/CBIM-Medical-Image-Segmentation)
 - [Swin Transformer](https://github.com/microsoft/Swin-Transformer)
+
