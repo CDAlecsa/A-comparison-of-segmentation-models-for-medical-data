@@ -1,6 +1,7 @@
 NOTICE
 
-The 'models' folder in this repository contains original or slightly modified implementations from external repositories, included solely to facilitate fair comparison of segmentation models on medical datasets for academic and research purposes.
+The 'models' folder in this repository contains original or slightly modified implementations from external repositories, 
+included solely to facilitate fair comparison of segmentation models on medical datasets for academic and research purposes.
 
 Users should note:
 
