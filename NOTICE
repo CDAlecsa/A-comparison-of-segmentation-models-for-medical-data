@@ -1,0 +1,19 @@
+NOTICE
+
+The 'models' folder in this repository contains original or slightly modified implementations from external repositories, included solely to facilitate fair comparison of segmentation models on medical datasets for academic and research purposes.
+
+Users should note:
+
+1. The 'models' folder is included only for pipeline consistency and ease of comparison.
+2. The original repositories maintain their own licenses. Users must respect these licenses 
+   if using the code or pretrained weights outside this comparison project.
+3. Pretrained weights should be obtained from the original repositories and placed in 
+   'pretrained_networks' as described in the README file.
+
+Original repositories included:
+- MT-UNet - https://github.com/Dootmaan/MT-UNet/
+- Swin-Unet - https://github.com/HuCaoFighting/Swin-Unet
+- TransUNet - https://github.com/Beckschen/TransUNet
+- Segmentation Models Pytorch - https://github.com/qubvel-org/segmentation_models.pytorch
+- CBIM - Medical Image Segmentation - https://github.com/yhygao/CBIM-Medical-Image-Segmentation
+- Swin Transformer - https://github.com/microsoft/Swin-Transformer
