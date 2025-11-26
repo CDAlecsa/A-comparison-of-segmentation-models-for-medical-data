@@ -1,0 +1,63 @@
+# Model
+model:
+  name: MT_UNet
+  epochs: 100
+  device: cuda
+  pretrained: true
+
+# Data
+data:
+  random_state: null
+  background_value: 0
+  num_workers: 4
+  batch_size: 32
+  data_path: ./Vascular_pathologies_data_cropped_128_128
+  train_val_indices_path: ./dataloader
+  
+# Augmentations
+aug:
+  gaussian_noise:
+    prob: 0.2
+    std: 0.02
+  gaussian_blur:
+    prob: 0.25
+    sigma: [0.5, 1.5]
+  brightness:
+    prob: 0.2
+    range: [0.8, 1.2]
+  gamma:
+    prob: 0.3
+    range: [0.7, 1.4]
+  affine:
+    prob: 0.45
+    scale: 0.2
+    rotate: 20
+    translate: 0.1
+  elastic:
+    prob: 0.35
+    alpha: 20
+    sigma: 4
+  mirror:
+    prob: 0.65
+
+# Loss
+loss:
+  learnable_params: true
+  loss_type: UW_loss
+  default_param_values: [0.5, 0.5]
+  loss_components:
+    ce:
+      weight: [0.5, 1.0]
+    dice:
+      weight: [0.5, 1.0]
+
+# Optimizer
+optimizer:
+  type: SGD
+  params:
+    lr: 0.01
+    momentum: 0.9
+    weight_decay: 0.0001
+
+
+
